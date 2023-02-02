@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Send Data to Mail</title>
+
+    <script src="index.js"></script>
+
+    <!-- this script you bring it from email js website -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("CREeGivYOPcXuleoc");
+      })();
+    </script>
+</head>
+<body>
+    <div class="form">
+        <form class="new_form" name="POST">
+            <label class="label" for="">Name :</label>
+            <input class="input" type="text" id="name"><br>
+            <label class="label" for="">Email :</label>
+            <input class="input" id="email"><br>
+            <label class="label" for="">Adress :</label>
+            <input class="input" type="text" id="adress"><br>
+            <button class="btn" onclick="sendMail()">Send</button>
+        </form>
+    </div>   
+</body>
+</html>
